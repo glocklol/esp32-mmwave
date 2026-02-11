@@ -40,7 +40,7 @@ Flashing:
 12. Click Install - NOT PREPARE FOR FIRST USE - and load that file we downloaded from ESPHome Builder in homeassistant, click install. Let it do its thing and when it's complete, unplug and re-plug the ESP to power (hitting the reset button will just put it back into bootloader mode. Power must be cut.
 13. Try pinging the IP you set for it and that's it.
 
-Getting it into home assistant
+Getting it into home assistant:
 
 The new esp should automatically show in the found devices in the home assistant integrations section. Click Add, and it may ask you for the encryption key we set up in secrets earlier. 
 
