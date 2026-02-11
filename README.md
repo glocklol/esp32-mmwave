@@ -27,7 +27,7 @@ Flashing:
 
 1. Click "+ New Device" > Continue > Empty Configuration > and name your device. I usually name mine in the following scheme: mmwave-kitchen to keep them easy to find.
 2. Once named, you'll see a new device with your chosen name pop up in the builder screen. Click Edit and paste the following config. Make sure to modify it as there are static IP addresses.
-   https://github.com/glocklol/esp32-mmwave/blob/main/mmwave-sample.yaml
+   [mmwave-sample.yaml](https://github.com/glocklol/esp32-mmwave/blob/main/mmwave-sample.yaml)
 3. Click Save.
 4. Click the 3 dots on your new device and select Install > Manual Download. Wait for the firmware to build. Once complete, select Factory Format and allow the download.
 5. Pop a new tab and head over to https://web.esphome.io in Chrome (it's one of the few browsers that is actually supported for this part)
