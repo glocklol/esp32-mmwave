@@ -24,13 +24,18 @@ wifi:
   password: !secret wifi_password
   fast_connect: true
   power_save_mode: none
-  # I recommend setting a static IP for devices or at least making sure mDNS works well on your iot network. 
+# I recommend setting a static IP for devices or at least making sure mDNS works well on your iot network. 
   manual_ip: 
     static_ip: 99.99.99.99
     gateway: 99.99.99.99
     subnet: 255.255.255.0
+# The ap and captive_portal sections can be deleted when your networking is solid and you can then re-flash the ESP wirelessly. 
+  ap:
+    ssid: "ESP Fallback Hotspot"
+    password: "password"
+captive_portal:
 
-# This Allows the ESP to act as a BLE Proxy to your home assistant instance so that something like the Bermuda Trilateration integration can be used to track BLE devices. Disable or delete if unneeded 
+# The bluetooth_proxy section allows the ESP to act as a BLE Proxy to your home assistant instance so that something like the Bermuda Trilateration integration can be used to track BLE devices. Disable or delete if unneeded 
 bluetooth_proxy:
   active: True
 
